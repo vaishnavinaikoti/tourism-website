@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" href="home.css">
+
+<title>Login Page</title>
+	<link rel="stylesheet" href="login.css">
+	<style>
+body {
+  background-image: url('aus2.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+<body><div class="topnav">
+  <a class="active" href="placestogo.html">Places to go</a>
+  <a href="intrests.html">Intrests</a>
+  <a href="tripplanning.html">Trip planning</a>
+  
+  <a href="login.html">Login</a>
+  <a href="about.html">About</a>
+</div>
+<br>
+<br>
+
+	<div class="login-page">
+	<div class="form">
+		<form class="register-form">
+    <input type="text" placeholder="username"/>
+    <input type="number" placeholder="Contact Number"/>
+    <input type="text" placeholder="Address"/>
+    <input type="emailid" placeholder="Email ID"/>
+	<input type="text" placeholder="password"/>
+		<button>Register</button>
+    <p class="message">Already Registered? <a href="home.html">Login</a></p>
+		</form>
+	
+    <form class="login-form">
+		<input type="text" placeholder="username"/>
+		<input type="text" placeholder="password"/>
+		<button>Login</button>
+		<p class="message">Not Registered? <a href="home.html">Register</a></p>
+		</form>
+    
+	</div>
+	</div>
+	
+	
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+	
+	<script>
+	$('.message a').click(function(){
+	$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
+	</script> 
+</body>
+</html>
